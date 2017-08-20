@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Univers';
+  src: url("../assets/fonts/univers/univers.woff") format("woff"), url("../assets/fonts/univers/UniversLTStd.otf") format("opentype"); }
+@font-face {
+  font-family: 'Gotham';
+  src: url("../assets/fonts/gotham/gotham-medium-webfont.woff") format("woff"), url("../assets/fonts/gotham/GOTHMMED.ttf") format("truetype");
+  font-weight: bold; }
+@font-face {
+  font-family: 'Gotham';
+  src: url("../assets/fonts/gotham/gotham-book-webfont.woff") format("woff"), url("../assets/fonts/gotham/GOTHMBOK.ttf") format("truetype");
+  font-weight: normal; }
+html body {
+  background: #fff;
+  font-family: "Univers", sans-serif;
+  font-size: 19px;
+  line-height: 1.5; }
+  html body h1, html body h2, html body h3, html body h4, html body h5 {
+    font-family: "Gotham", sans-serif; }

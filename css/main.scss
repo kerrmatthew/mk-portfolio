@@ -1,0 +1,70 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Univers';
+  src: url("../assets/fonts/univers/univers.woff") format("woff"),
+       url("../assets/fonts/univers/UniversLTStd.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("../assets/fonts/gotham/gotham-medium-webfont.woff") format("woff"),
+       url("../assets/fonts/gotham/GOTHMMED.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../assets/fonts/gotham/gotham-book-webfont.woff') format("woff"),
+       url('../assets/fonts/gotham/GOTHMBOK.ttf')  format('truetype');
+  font-weight: normal;
+}
+
+// Our variables
+$base-font-family: 'Univers', sans-serif;
+$heading-font-family: 'Gotham', sans-serif;
+
+$base-font-size:   19px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #35499E;
+$link-color:       #428CAE;
+$background-color: #EAF3F5;
+$brand-color:      #4E78D4;
+
+// Width of the content area
+$content-width:    1100px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@mixin media-query-min($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "layout"
+;
