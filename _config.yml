@@ -1,0 +1,16 @@
+defaults:
+  - scope:
+      path: "assets/img/parallax/near"
+    values:
+      image: true
+      parallax: 'near'
+  - scope:
+      path: "assets/img/parallax/mid"
+    values:
+      image: true
+      parallax: 'mid'
+  - scope:
+      path: "assets/img/parallax/far"
+    values:
+      image: true
+      parallax: 'far'

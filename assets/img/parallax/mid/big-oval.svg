@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>big Oval</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.451256793">
+        <g id="big-Oval" fill-rule="nonzero" fill="#000000">
+            <path d="M9,17.5 C4.30557963,17.5 0.5,13.6944204 0.5,9 C0.5,4.30557963 4.30557963,0.5 9,0.5 C13.6944204,0.5 17.5,4.30557963 17.5,9 C17.5,13.6944204 13.6944204,17.5 9,17.5 Z M9,12.5 C10.9329966,12.5 12.5,10.9329966 12.5,9 C12.5,7.06700338 10.9329966,5.5 9,5.5 C7.06700338,5.5 5.5,7.06700338 5.5,9 C5.5,10.9329966 7.06700338,12.5 9,12.5 Z" id="Oval"></path>
+        </g>
+    </g>
+</svg>
