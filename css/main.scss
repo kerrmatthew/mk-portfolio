@@ -53,18 +53,20 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
 
 @mixin media-query-min($device) {
-    @media screen and (min-width: $device) {
-        @content;
-    }
+  @media screen and (min-width: $device) {
+    @content;
+  }
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-  "layout"
+  "layout",
+  "xoxo",
+  "header"
 ;

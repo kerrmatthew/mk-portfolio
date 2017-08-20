@@ -14,5 +14,57 @@ html body {
   font-family: "Univers", sans-serif;
   font-size: 19px;
   line-height: 1.5; }
+  html body > .wrapper {
+    position: relative; }
   html body h1, html body h2, html body h3, html body h4, html body h5 {
     font-family: "Gotham", sans-serif; }
+
+.xoxo {
+  width: 100%;
+  height: 100%;
+  min-height: 3000px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .xoxo .xo {
+    display: block;
+    position: absolute; }
+    .xoxo .xo.big-x {
+      background: url("../assets/img/parallax/mid/big-x.svg");
+      width: 19px;
+      height: 18px; }
+    .xoxo .xo.big-o {
+      background: url("../assets/img/parallax/mid/big-oval.svg");
+      width: 18px;
+      height: 18px; }
+    .xoxo .xo.small-x {
+      background: url("../assets/img/parallax/far/mid-x.svg");
+      width: 9px;
+      height: 8px; }
+    .xoxo .xo.small-o {
+      background: url("../assets/img/parallax/far/mid-oval.svg");
+      width: 8px;
+      height: 8px; }
+
+.header-wrapper {
+  position: relative;
+  display: table;
+  width: 100%; }
+  .header-wrapper .header {
+    height: 800px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+    display: table-cell; }
+    .header-wrapper .header img {
+      width: 180px;
+      height: 180px;
+      margin-bottom: 80px; }
+    .header-wrapper .header h1 {
+      color: #FF5757;
+      font-size: 4em; }
+    .header-wrapper .header h2 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.5em; }

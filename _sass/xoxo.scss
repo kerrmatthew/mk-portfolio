@@ -1,0 +1,38 @@
+.xoxo {
+  width: 100%;
+  height: 100%;
+  min-height: 3000px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .xo {
+      display: block;
+      position: absolute;
+
+    &.big-x {
+      background: url('../assets/img/parallax/mid/big-x.svg');
+      width: 19px;
+      height: 18px;
+    }
+
+    &.big-o {
+      background: url('../assets/img/parallax/mid/big-oval.svg');
+      width: 18px;
+      height: 18px;
+    }
+
+    &.small-x {
+      background: url('../assets/img/parallax/far/mid-x.svg');
+      width: 9px;
+      height: 8px;
+    }
+
+    &.small-o {
+      background: url('../assets/img/parallax/far/mid-oval.svg');
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
