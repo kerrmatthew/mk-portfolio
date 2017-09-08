@@ -6,18 +6,25 @@ $(function(){
 	var big_o;
 	var small_x;
 	var small_o;
-	var tracked;
+	var mousePos;
+	var _mouseYfromCenter;
+	var _mouseXfromCenter;
 
 	function init() {
 		resize();
 		window.addEventListener('resize', resize);
 
-		big_x = initPositions('.big-x .xo');
-		big_o = initPositions('.big-o .xo');
-		small_x = initPositions('.small-x .xo');
-		small_o = initPositions('.small-o .xo');;
+		big_x = initPositions('.big-x .xo', 0.9, 0.25);
+		big_o = initPositions('.big-o .xo', 0.9, 0.25);
+		small_x = initPositions('.small-x .xo', 0.95, 0.1);
+		small_o = initPositions('.small-o .xo', 0.95, 0.1);
 
-		tracked = big_x[0];
+		mousePos = { x: -1, y: -1 };
+    $(document).mousemove(function(event) {
+        mousePos.x = event.pageX;
+        mousePos.y = event.pageY;
+    });
+
 		loop();
 	}
 
@@ -27,32 +34,45 @@ $(function(){
 	  _scrollHeight = _containerHeight-_height;
 	}
 
-	function initPositions(selector) {
+	function initPositions(selector, baseScrollSpeed, basePerspectiveSpeed) {
 		var arr = [];
 	  $(selector).map(function(){
-			// [element, currentPos, originPos]
-			var pos = parseInt(this.style['top']);
-	    arr.push([this, pos, pos]);
+			var position = {
+				top: parseInt(this.style['top']),
+				left: parseInt(this.style['left']),
+			};
+			var depth = Math.random();
+	    arr.push({
+				element: this,
+				position: position,
+				originalPosition: Object.assign({}, position),
+				scrollSpeed: baseScrollSpeed + (depth/25),
+				perspectiveSpeed: basePerspectiveSpeed,
+			});
 		});
 		return arr;
 	}
 
-	function updateElements(movingElements, speed) {
+	function updateElements(movingElements) {
 	  for (var i = 0; i < movingElements.length; i++) {
 	    var p = movingElements[i];
-			p[1] = (p[2]+_scrollOffset*speed)-_scrollOffset;
-			p[0].style['top'] = p[1]+'%';
+			var originTopWithPerspectiveShift = p.originalPosition.top - (_mouseYfromCenter*p.perspectiveSpeed)/100;
+			p.position.top = (originTopWithPerspectiveShift + _scrollOffset * p.scrollSpeed) -_scrollOffset;
+			p.position.left = p.originalPosition.left - (_mouseXfromCenter*p.perspectiveSpeed)/1000;
+
+			p.element.style['top'] = p.position.top+'%';
+			p.element.style['left'] = p.position.left+'%';
 		}
 	}
 
 	function loop() {
 	  _scrollOffset = window.scrollTop == undefined ? window.pageYOffset : window.scrollTop;
-	  _scrollPercent = _scrollOffset/_scrollHeight || 0;
-		updateElements(big_x, 0.85);
-		updateElements(big_o, 0.85);
-	  updateElements(small_x, 0.65);
-		updateElements(small_o, 0.65);
-		// console.log(tracked[1]);
+		_mouseYfromCenter = mousePos.y - _height/2;
+		_mouseXfromCenter = mousePos.x - _width/2;
+		updateElements(big_x);
+		updateElements(big_o);
+	  updateElements(small_x);
+		updateElements(small_o);
 
 	  requestAnimationFrame(loop);
 	}

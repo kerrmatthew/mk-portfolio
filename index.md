@@ -68,7 +68,5 @@ permalink: /
       <h1 class="heavy">Matthew Kerr</h1>
       <h2>Digital Product Designer</h2>
     </div>
-
-    
   </div>
 </div>
