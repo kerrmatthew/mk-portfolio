@@ -1,3 +1,3 @@
 $(function(){
-  $('.header-wrapper').height(window.innerHeight);
+  $('.xoxo').height(window.innerHeight);
 });

@@ -18,7 +18,7 @@ html body {
     position: relative; }
   html body h1, html body h2, html body h3, html body h4, html body h5 {
     font-family: "Gotham", sans-serif; }
-    html body h1.fat, html body h2.fat, html body h3.fat, html body h4.fat, html body h5.fat {
+    html body h1.heavy, html body h2.heavy, html body h3.heavy, html body h4.heavy, html body h5.heavy {
       font-weight: 900; }
 
 .xoxo {
@@ -36,159 +36,18 @@ html body {
     background: url("../assets/img/parallax/mid/big-x.svg");
     width: 19px;
     height: 18px; }
-    .xoxo .big-x .xo:nth-of-type(1) {
-      top: 5%;
-      left: 67%; }
-    .xoxo .big-x .xo:nth-of-type(2) {
-      top: 18%;
-      left: 77%; }
-    .xoxo .big-x .xo:nth-of-type(3) {
-      top: 32%;
-      left: 42%; }
-    .xoxo .big-x .xo:nth-of-type(4) {
-      top: 60%;
-      left: 51%; }
   .xoxo .big-o .xo {
     background: url("../assets/img/parallax/mid/big-oval.svg");
     width: 18px;
     height: 18px; }
-    .xoxo .big-o .xo:nth-of-type(1) {
-      top: 5%;
-      left: 10%; }
-    .xoxo .big-o .xo:nth-of-type(2) {
-      top: 25%;
-      left: 20%; }
-    .xoxo .big-o .xo:nth-of-type(3) {
-      top: 15%;
-      left: 50%; }
-    .xoxo .big-o .xo:nth-of-type(4) {
-      top: 20%;
-      left: 90%; }
-    .xoxo .big-o .xo:nth-of-type(5) {
-      top: 47%;
-      left: 33%; }
-    .xoxo .big-o .xo:nth-of-type(6) {
-      top: 30%;
-      left: 75%; }
-    .xoxo .big-o .xo:nth-of-type(7) {
-      top: 70%;
-      left: 25%; }
   .xoxo .small-x .xo {
     background: url("../assets/img/parallax/far/mid-x.svg");
     width: 9px;
     height: 8px; }
-    .xoxo .small-x .xo:nth-of-type(1) {
-      top: 10%;
-      left: 74%; }
-    .xoxo .small-x .xo:nth-of-type(2) {
-      top: 15%;
-      left: 54%; }
-    .xoxo .small-x .xo:nth-of-type(3) {
-      top: 20%;
-      left: 58%; }
-    .xoxo .small-x .xo:nth-of-type(4) {
-      top: 25%;
-      left: 64%; }
-    .xoxo .small-x .xo:nth-of-type(4) {
-      top: 26%;
-      left: 65%; }
-    .xoxo .small-x .xo:nth-of-type(5) {
-      top: 38%;
-      left: 63%; }
-    .xoxo .small-x .xo:nth-of-type(6) {
-      top: 48%;
-      left: 70%; }
-    .xoxo .small-x .xo:nth-of-type(7) {
-      top: 35%;
-      left: 24%; }
-    .xoxo .small-x .xo:nth-of-type(8) {
-      top: 45%;
-      left: 26%; }
-    .xoxo .small-x .xo:nth-of-type(9) {
-      top: 65%;
-      left: 6%; }
-    .xoxo .small-x .xo:nth-of-type(10) {
-      top: 75%;
-      left: 10%; }
-    .xoxo .small-x .xo:nth-of-type(11) {
-      top: 85%;
-      left: 15%; }
-    .xoxo .small-x .xo:nth-of-type(11) {
-      top: 90%;
-      left: 5%; }
-    .xoxo .small-x .xo:nth-of-type(12) {
-      top: 98%;
-      left: 25%; }
-    .xoxo .small-x .xo:nth-of-type(13) {
-      top: 90%;
-      left: 35%; }
-    .xoxo .small-x .xo:nth-of-type(14) {
-      top: 85%;
-      left: 90%; }
-    .xoxo .small-x .xo:nth-of-type(15) {
-      top: 75%;
-      left: 73%; }
-    .xoxo .small-x .xo:nth-of-type(16) {
-      top: 95%;
-      left: 63%; }
   .xoxo .small-o .xo {
     background: url("../assets/img/parallax/far/mid-oval.svg");
     width: 8px;
     height: 8px; }
-    .xoxo .small-o .xo:nth-of-type(1) {
-      bottom: 10%;
-      right: 74%; }
-    .xoxo .small-o .xo:nth-of-type(2) {
-      bottom: 15%;
-      right: 54%; }
-    .xoxo .small-o .xo:nth-of-type(3) {
-      bottom: 20%;
-      right: 58%; }
-    .xoxo .small-o .xo:nth-of-type(4) {
-      bottom: 25%;
-      right: 64%; }
-    .xoxo .small-o .xo:nth-of-type(4) {
-      bottom: 26%;
-      right: 65%; }
-    .xoxo .small-o .xo:nth-of-type(5) {
-      bottom: 38%;
-      right: 63%; }
-    .xoxo .small-o .xo:nth-of-type(6) {
-      bottom: 48%;
-      right: 70%; }
-    .xoxo .small-o .xo:nth-of-type(7) {
-      bottom: 35%;
-      right: 24%; }
-    .xoxo .small-o .xo:nth-of-type(8) {
-      bottom: 45%;
-      right: 26%; }
-    .xoxo .small-o .xo:nth-of-type(9) {
-      bottom: 65%;
-      right: 6%; }
-    .xoxo .small-o .xo:nth-of-type(10) {
-      bottom: 75%;
-      right: 10%; }
-    .xoxo .small-o .xo:nth-of-type(11) {
-      bottom: 85%;
-      right: 15%; }
-    .xoxo .small-o .xo:nth-of-type(11) {
-      bottom: 90%;
-      right: 5%; }
-    .xoxo .small-o .xo:nth-of-type(12) {
-      bottom: 98%;
-      right: 25%; }
-    .xoxo .small-o .xo:nth-of-type(13) {
-      bottom: 90%;
-      right: 35%; }
-    .xoxo .small-o .xo:nth-of-type(14) {
-      bottom: 85%;
-      right: 90%; }
-    .xoxo .small-o .xo:nth-of-type(15) {
-      bottom: 75%;
-      right: 73%; }
-    .xoxo .small-o .xo:nth-of-type(16) {
-      bottom: 95%;
-      right: 63%; }
 
 .header-wrapper {
   position: relative;
