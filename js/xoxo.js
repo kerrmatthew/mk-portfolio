@@ -46,8 +46,8 @@ $(function(){
 				element: this,
 				position: position,
 				originalPosition: Object.assign({}, position),
-				scrollSpeed: baseScrollSpeed + (depth/25),
-				perspectiveSpeed: basePerspectiveSpeed,
+				scrollSpeed: baseScrollSpeed + depth/25,
+				perspectiveSpeed: basePerspectiveSpeed + depth/10,
 			});
 		});
 		return arr;
@@ -65,6 +65,15 @@ $(function(){
 		}
 	}
 
+	function updateHeader() {
+		var headerSpeed = -0.0005;
+		var newX = headerSpeed * _mouseXfromCenter;
+		var newY = headerSpeed * _mouseYfromCenter;
+
+		$('.header').css('-webkit-transform', 'translate3d('+newX+'%,'+newY+'%,0)');
+		$('.header').css('transform', 'translate3d('+newX+'%,'+newY+'5,0)');
+	}
+
 	function loop() {
 	  _scrollOffset = window.scrollTop == undefined ? window.pageYOffset : window.scrollTop;
 		_mouseYfromCenter = mousePos.y - _height/2;
@@ -73,6 +82,7 @@ $(function(){
 		updateElements(big_o);
 	  updateElements(small_x);
 		updateElements(small_o);
+		// updateHeader();
 
 	  requestAnimationFrame(loop);
 	}
