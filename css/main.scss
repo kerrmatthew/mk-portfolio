@@ -11,6 +11,13 @@
 
 @font-face {
   font-family: 'Gotham';
+  src: url("../assets/fonts/gotham/gotham-book-webfont.woff") format("woff"),
+       url("../assets/fonts/gotham/GOTHMBOK.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
   src: url("../assets/fonts/gotham/gotham-medium-webfont.woff") format("woff"),
        url("../assets/fonts/gotham/GOTHMMED.ttf") format("truetype");
   font-weight: bold;
@@ -24,8 +31,9 @@
 }
 
 // Our variables
-$base-font-family: 'Univers', sans-serif;
+$alt-font-family: 'Univers', sans-serif;
 $heading-font-family: 'Gotham', sans-serif;
+$base-font-family: $heading-font-family;
 
 $base-font-size:   19px;
 $small-font-size:  $base-font-size * 0.875;
@@ -67,6 +75,13 @@ $on-laptop:        800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "layout",
+  "footer",
   "xoxo",
-  "header"
+  "index/index",
+  "index/header",
+  "index/ping",
+  "index/teach",
+  "index/mind_maps",
+  "index/safety_culture",
+  "index/risk_culture"
 ;

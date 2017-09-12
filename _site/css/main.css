@@ -3,6 +3,10 @@
   src: url("../assets/fonts/univers/univers.woff") format("woff"), url("../assets/fonts/univers/UniversLTStd.otf") format("opentype"); }
 @font-face {
   font-family: 'Gotham';
+  src: url("../assets/fonts/gotham/gotham-book-webfont.woff") format("woff"), url("../assets/fonts/gotham/GOTHMBOK.ttf") format("truetype");
+  font-weight: normal; }
+@font-face {
+  font-family: 'Gotham';
   src: url("../assets/fonts/gotham/gotham-medium-webfont.woff") format("woff"), url("../assets/fonts/gotham/GOTHMMED.ttf") format("truetype");
   font-weight: bold; }
 @font-face {
@@ -11,20 +15,31 @@
   font-weight: 900; }
 html body {
   background: #fff;
-  font-family: "Univers", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 19px;
   line-height: 1.5; }
   html body > .wrapper {
     position: relative; }
   html body h1, html body h2, html body h3, html body h4, html body h5 {
     font-family: "Gotham", sans-serif; }
-    html body h1.heavy, html body h2.heavy, html body h3.heavy, html body h4.heavy, html body h5.heavy {
-      font-weight: 900; }
+  html body .heavy {
+    font-weight: 900;
+    letter-spacing: 0.05rem; }
+  html body .white {
+    color: #fff; }
+
+footer {
+  background-color: #DDDDDD;
+  position: relative;
+  z-index: 1; }
+  footer .footer {
+    padding: 160px 0 360px;
+    max-width: 600px;
+    margin: 0 auto; }
 
 .xoxo {
   width: 100%;
-  height: 100%;
-  min-height: 800px;
+  min-height: 100%;
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -49,6 +64,12 @@ html body {
     width: 8px;
     height: 8px; }
 
+.cards {
+  max-width: 720px; }
+  .cards .card-break {
+    clear: both;
+    margin: -20px 0; }
+
 .header-wrapper {
   position: relative;
   display: table;
@@ -71,3 +92,45 @@ html body {
       text-transform: uppercase;
       font-weight: bold;
       font-size: 1.5em; }
+
+.ping {
+  font-family: "Univers", sans-serif;
+  text-transform: uppercase;
+  float: right;
+  max-width: 450px; }
+  .ping .title {
+    color: #FFFF38; }
+  .ping .card {
+    padding: 50px;
+    background-color: #FFFF38; }
+    .ping .card > * {
+      width: 49%;
+      float: left; }
+    .ping .card .ping-logo {
+      text-align: right; }
+      .ping .card .ping-logo img {
+        max-width: 121px;
+        width: 100%; }
+    .ping .card .inner-box {
+      border-left: 2px solid #7B4288; }
+
+.teach {
+  background-color: #66DAE7;
+  color: #fff;
+  font-family: "Univers", sans-serif; }
+
+.mind-maps {
+  background-color: #F81CCF;
+  font-family: "Univers", sans-serif;
+  color: #fff;
+  float: left; }
+
+.safety-culture {
+  background-color: #F57523;
+  color: #fff;
+  font-family: "Univers", sans-serif; }
+
+.risk-culture {
+  background-color: #136DFE;
+  color: #fff;
+  font-family: "Univers", sans-serif; }

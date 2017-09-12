@@ -1,0 +1,31 @@
+$ping-color: #FFFF38;
+$ping-accent: #7B4288;
+
+.ping {
+  font-family: $alt-font-family;
+  text-transform: uppercase;
+  float: right;
+  max-width: 450px;
+
+  .title {
+    color: $ping-color;
+  }
+  .card {
+    padding: 50px;
+    background-color: $ping-color;
+    > * {
+      width: 49%;
+      float: left;
+    }
+    .ping-logo {
+      text-align: right;
+      img {
+        max-width: 121px;
+        width: 100%;
+      }
+    }
+    .inner-box {
+      border-left: 2px solid $ping-accent;
+    }
+  }
+}
