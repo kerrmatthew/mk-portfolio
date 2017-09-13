@@ -1,31 +1,33 @@
-$ping-color: #FFFF38;
-$ping-accent: #7B4288;
-
+$card-color: #FFFF38;
+$card-accent: #7B4288;
 .ping {
-  font-family: $alt-font-family;
-  text-transform: uppercase;
   float: right;
-  max-width: 450px;
-
+  max-width: 76%;
+  width: 546px;
+  z-index: 2;
+  position: relative;
   .title {
-    color: $ping-color;
+    color: $card-color;
   }
-  .card {
-    padding: 50px;
-    background-color: $ping-color;
+  .index-card {
+    background-color: $card-color;
     > * {
-      width: 49%;
-      float: left;
+      display: inline-block;
+    }
+    .inner-box {
+      border-left-color: $card-accent;
+      color: $card-accent;
+      width: 50%;
     }
     .ping-logo {
       text-align: right;
+      padding: 35px 25px;
+      vertical-align: top;
+      width: 40%;
       img {
         max-width: 121px;
         width: 100%;
       }
-    }
-    .inner-box {
-      border-left: 2px solid $ping-accent;
     }
   }
 }

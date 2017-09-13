@@ -1,6 +1,57 @@
+$card-color: #F81CCF;
+$card-accent: #fff;
+$node-1: #D4E300;
+$node-2: #F8931C;
+$node-3: #C17E0E;
+$node-4: #C721D3;
+
 .mind-maps {
-  background-color: #F81CCF;
-  font-family: $alt-font-family;
-  color: #fff;
   float: left;
+  margin-top: -40px;
+  max-width: 52%;
+  width: 374px;
+  .title {
+    color: $card-color;
+  }
+
+  .index-card {
+    background-color: $card-color;
+    .node {
+      color: #fff;
+      display: inline-block;
+      padding: 10px 10px 10px 38px;
+      border-radius: 50px;
+      position: relative;
+      margin: 5px;
+      min-width: 105px;
+      font-size: 1.1rem;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-image: url('../assets/img/cube.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 12px;
+      }
+      &.node-one {
+        background-color: $node-1;
+      }
+      &.node-two {
+        background-color: $node-2;
+      }
+      &.node-three {
+        background-color: $node-3;
+      }
+      &.node-four {
+        background-color: $node-4;
+      }
+    }
+    .inner-box {
+      margin-top: 50px;
+      border-left-color: $card-accent;
+      color: $card-accent;
+    }
+  }
 }

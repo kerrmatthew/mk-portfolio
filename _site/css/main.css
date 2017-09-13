@@ -2,6 +2,9 @@
   font-family: 'Univers';
   src: url("../assets/fonts/univers/univers.woff") format("woff"), url("../assets/fonts/univers/UniversLTStd.otf") format("opentype"); }
 @font-face {
+  font-family: 'UniversCnd';
+  src: url("../assets/fonts/univers/univers-ultracondensed-webfont.woff") format("woff"), url("../assets/fonts/univers/UniversLTStd-UltraCn.otf") format("opentype"); }
+@font-face {
   font-family: 'Gotham';
   src: url("../assets/fonts/gotham/gotham-book-webfont.woff") format("woff"), url("../assets/fonts/gotham/GOTHMBOK.ttf") format("truetype");
   font-weight: normal; }
@@ -65,10 +68,28 @@ footer {
     height: 8px; }
 
 .cards {
-  max-width: 720px; }
+  max-width: 720px;
+  margin: 0 auto;
+  font-family: "Univers", sans-serif;
+  z-index: 1;
+  position: relative; }
+  .cards .title {
+    font-size: 0.95rem;
+    text-transform: uppercase; }
   .cards .card-break {
     clear: both;
     margin: -20px 0; }
+  .cards .index-card {
+    padding: 100px 50px; }
+    .cards .index-card .inner-box {
+      border-left-width: 2px;
+      border-left-style: solid;
+      padding-left: 15px;
+      font-size: 3rem;
+      line-height: 3rem;
+      letter-spacing: 5px;
+      font-family: "UniversCnd", sans-serif;
+      text-transform: uppercase; }
 
 .header-wrapper {
   position: relative;
@@ -94,25 +115,29 @@ footer {
       font-size: 1.5em; }
 
 .ping {
-  font-family: "Univers", sans-serif;
-  text-transform: uppercase;
   float: right;
-  max-width: 450px; }
+  max-width: 76%;
+  width: 546px;
+  z-index: 2;
+  position: relative; }
   .ping .title {
     color: #FFFF38; }
-  .ping .card {
-    padding: 50px;
+  .ping .index-card {
     background-color: #FFFF38; }
-    .ping .card > * {
-      width: 49%;
-      float: left; }
-    .ping .card .ping-logo {
-      text-align: right; }
-      .ping .card .ping-logo img {
+    .ping .index-card > * {
+      display: inline-block; }
+    .ping .index-card .inner-box {
+      border-left-color: #7B4288;
+      color: #7B4288;
+      width: 50%; }
+    .ping .index-card .ping-logo {
+      text-align: right;
+      padding: 35px 25px;
+      vertical-align: top;
+      width: 40%; }
+      .ping .index-card .ping-logo img {
         max-width: 121px;
         width: 100%; }
-    .ping .card .inner-box {
-      border-left: 2px solid #7B4288; }
 
 .teach {
   background-color: #66DAE7;
@@ -120,10 +145,44 @@ footer {
   font-family: "Univers", sans-serif; }
 
 .mind-maps {
-  background-color: #F81CCF;
-  font-family: "Univers", sans-serif;
-  color: #fff;
-  float: left; }
+  float: left;
+  margin-top: -40px;
+  max-width: 52%;
+  width: 374px; }
+  .mind-maps .title {
+    color: #F81CCF; }
+  .mind-maps .index-card {
+    background-color: #F81CCF; }
+    .mind-maps .index-card .node {
+      color: #fff;
+      display: inline-block;
+      padding: 10px 10px 10px 38px;
+      border-radius: 50px;
+      position: relative;
+      margin: 5px;
+      min-width: 105px;
+      font-size: 1.1rem; }
+      .mind-maps .index-card .node:before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-image: url("../assets/img/cube.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 12px; }
+      .mind-maps .index-card .node.node-one {
+        background-color: #D4E300; }
+      .mind-maps .index-card .node.node-two {
+        background-color: #F8931C; }
+      .mind-maps .index-card .node.node-three {
+        background-color: #C17E0E; }
+      .mind-maps .index-card .node.node-four {
+        background-color: #C721D3; }
+    .mind-maps .index-card .inner-box {
+      margin-top: 50px;
+      border-left-color: #fff;
+      color: #fff; }
 
 .safety-culture {
   background-color: #F57523;

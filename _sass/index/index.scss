@@ -1,8 +1,31 @@
 .cards {
   max-width: 720px;
+  margin: 0 auto;
+  font-family: $alt-font-family;
+  z-index: 1;
+  position: relative;
+
+  .title {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+  }
 
   .card-break {
     clear: both;
     margin: -20px 0;
+  }
+
+  .index-card {
+    padding: 100px 50px;
+    .inner-box {
+      border-left-width: 2px;
+      border-left-style: solid;
+      padding-left: 15px;
+      font-size: 3rem;
+      line-height: 3rem;
+      letter-spacing: 5px;
+      font-family: $alt-font-family-cnd;
+      text-transform: uppercase;
+    }
   }
 }
