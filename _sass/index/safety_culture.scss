@@ -1,5 +1,32 @@
+$card-color: #F57523;
+$card-accent: #fff;
 .safety-culture {
-  background-color: #F57523;
-  color: #fff;
-  font-family: $alt-font-family;
+  float: left;
+  max-width: 76%;
+  margin-top: -50px;
+  width: 494px;
+  z-index: 1;
+  position: relative;
+  .title {
+    color: $card-color;
+  }
+  .index-card {
+    background-color: $card-color;
+    > * {
+      display: inline-block;
+    }
+    .inner-box {
+      border-left-color: $card-accent;
+      color: $card-accent;
+      width: 49%;
+    }
+    .logo {
+      vertical-align: top;
+      width: 49%;
+      img {
+        height:185px;
+        margin-top: -15px;
+      }
+    }
+  }
 }

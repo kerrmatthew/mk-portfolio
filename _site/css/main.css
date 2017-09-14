@@ -34,7 +34,8 @@ html body {
 footer {
   background-color: #DDDDDD;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  margin-top: -50px; }
   footer .footer {
     padding: 160px 0 360px;
     max-width: 600px;
@@ -71,7 +72,7 @@ footer {
   max-width: 720px;
   margin: 0 auto;
   font-family: "Univers", sans-serif;
-  z-index: 1;
+  z-index: 2;
   position: relative; }
   .cards .title {
     font-size: 0.95rem;
@@ -140,9 +141,21 @@ footer {
         width: 100%; }
 
 .teach {
-  background-color: #66DAE7;
-  color: #fff;
-  font-family: "Univers", sans-serif; }
+  float: right;
+  margin-top: -310px;
+  max-width: 76%;
+  width: 365px;
+  z-index: 2;
+  position: relative; }
+  .teach .title {
+    color: #66DAE7; }
+  .teach .index-card {
+    background-color: #66DAE7; }
+    .teach .index-card > * {
+      display: inline-block; }
+    .teach .index-card .inner-box {
+      border-left-color: #fff;
+      color: #fff; }
 
 .mind-maps {
   float: left;
@@ -185,11 +198,51 @@ footer {
       color: #fff; }
 
 .safety-culture {
-  background-color: #F57523;
-  color: #fff;
-  font-family: "Univers", sans-serif; }
+  float: left;
+  max-width: 76%;
+  margin-top: -50px;
+  width: 494px;
+  z-index: 1;
+  position: relative; }
+  .safety-culture .title {
+    color: #F57523; }
+  .safety-culture .index-card {
+    background-color: #F57523; }
+    .safety-culture .index-card > * {
+      display: inline-block; }
+    .safety-culture .index-card .inner-box {
+      border-left-color: #fff;
+      color: #fff;
+      width: 49%; }
+    .safety-culture .index-card .logo {
+      vertical-align: top;
+      width: 49%; }
+      .safety-culture .index-card .logo img {
+        height: 185px;
+        margin-top: -15px; }
 
 .risk-culture {
-  background-color: #136DFE;
-  color: #fff;
-  font-family: "Univers", sans-serif; }
+  float: right;
+  max-width: 76%;
+  margin-top: -40px;
+  width: 544px;
+  z-index: 2;
+  position: relative; }
+  .risk-culture .title {
+    color: #136DFE; }
+  .risk-culture .index-card {
+    background-color: #136DFE;
+    padding-left: 30px;
+    padding-right: 30px; }
+    .risk-culture .index-card > * {
+      display: inline-block; }
+    .risk-culture .index-card .inner-box {
+      border-left-color: #fff;
+      color: #fff;
+      width: 60%; }
+    .risk-culture .index-card .logo {
+      vertical-align: top;
+      width: 36%;
+      padding: 10px 20px; }
+      .risk-culture .index-card .logo img {
+        max-width: 100%; }

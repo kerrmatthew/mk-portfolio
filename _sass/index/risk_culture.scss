@@ -1,5 +1,35 @@
+$card-color: #136DFE;
+$card-accent: #fff;
+
 .risk-culture {
-  background-color: #136DFE;
-  color: #fff;
-  font-family: $alt-font-family;
+  float: right;
+  max-width: 76%;
+  margin-top: -40px;
+  width: 544px;
+  z-index: 2;
+  position: relative;
+  .title {
+    color: $card-color;
+  }
+  .index-card {
+    background-color: $card-color;
+    padding-left: 30px;
+    padding-right: 30px;
+    > * {
+      display: inline-block;
+    }
+    .inner-box {
+      border-left-color: $card-accent;
+      color: $card-accent;
+      width: 60%;
+    }
+    .logo {
+      vertical-align: top;
+      width: 36%;
+      padding: 10px 20px;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
 }

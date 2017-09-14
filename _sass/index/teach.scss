@@ -1,5 +1,23 @@
+$card-color: #66DAE7;
+$card-accent: #fff;
 .teach {
-  background-color: #66DAE7;
-  color: #fff;
-  font-family: $alt-font-family;
+  float: right;
+  margin-top: -310px;
+  max-width: 76%;
+  width: 365px;
+  z-index: 2;
+  position: relative;
+  .title {
+    color: $card-color;
+  }
+  .index-card {
+    background-color: $card-color;
+    > * {
+      display: inline-block;
+    }
+    .inner-box {
+      border-left-color: $card-accent;
+      color: $card-accent;
+    }
+  }
 }
