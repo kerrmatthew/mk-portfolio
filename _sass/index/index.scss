@@ -15,17 +15,44 @@
     margin: -20px 0;
   }
 
-  .index-card {
-    padding: 100px 50px;
-    .inner-box {
-      border-left-width: 2px;
-      border-left-style: solid;
-      padding-left: 15px;
-      font-size: 3rem;
-      line-height: 3rem;
-      letter-spacing: 5px;
-      font-family: $alt-font-family-cnd;
-      text-transform: uppercase;
+  .index-card-wrapper {
+    position: relative;
+    .index-card {
+      padding: 100px 50px;
+      max-width: 100%;
+      .inner-box {
+        border-left-width: 2px;
+        border-left-style: solid;
+        padding-left: 21px;
+        font-size: 3rem;
+        line-height: 3rem;
+        letter-spacing: 5px;
+        font-family: $alt-font-family-cnd;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @include media-query($on-palm) {
+    > * {
+      width: 100%;
+      max-width: 100%;
+      float: none;
+      margin-top: 0;
+
+      .title {
+        padding-left: 10px;
+      }
+
+      .index-card {
+        display: table-cell;
+        vertical-align: middle;
+        .logo {
+          width: auto;
+          max-width: 73%;
+          padding-bottom: 20px;
+        }
+      }
     }
   }
 }

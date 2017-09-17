@@ -8,5 +8,10 @@ footer {
     padding: 160px 0 360px;
     max-width: 600px;
     margin: 0 auto;
+    @include media-query($on-palm) {
+      padding-bottom: 160px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
   }
 }
