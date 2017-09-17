@@ -10,6 +10,9 @@ $card-accent: #fff;
   position: relative;
   .title {
     color: $card-color;
+    @include media-query($on-palm) {
+      color: $card-accent;
+    }
   }
   .index-card {
     background-color: $card-color;
