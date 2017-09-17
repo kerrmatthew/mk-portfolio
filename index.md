@@ -3,7 +3,6 @@ layout: default
 permalink: /
 ---
 <div class="xoxo">
-  {% include index/xoxo.html %}
   {% include index/header.html %}
   <div class="cards">
     {% include index/ping.html %}
@@ -18,4 +17,6 @@ permalink: /
     <br class="card-break" />
   </div>
   {% include footer.html %}
+  <div class="mid"></div>
+  <div class="far"></div>
 </div>

@@ -34,7 +34,7 @@ html body {
 footer {
   background-color: #DDDDDD;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin-top: -50px; }
   footer .footer {
     padding: 160px 0 360px;
@@ -49,36 +49,46 @@ footer {
 .xoxo {
   width: 100%;
   min-height: 100%;
-  overflow: hidden;
   position: absolute;
   top: 0;
-  left: 0; }
-  .xoxo .xo {
-    display: block;
-    position: absolute; }
-  .xoxo .big-x .xo {
-    background: url("../assets/img/parallax/mid/big-x.svg");
-    width: 19px;
-    height: 18px; }
-  .xoxo .big-o .xo {
-    background: url("../assets/img/parallax/mid/big-oval.svg");
-    width: 18px;
-    height: 18px; }
-  .xoxo .small-x .xo {
-    background: url("../assets/img/parallax/far/mid-x.svg");
-    width: 9px;
-    height: 8px; }
-  .xoxo .small-o .xo {
-    background: url("../assets/img/parallax/far/mid-oval.svg");
-    width: 8px;
-    height: 8px; }
+  left: 0;
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  .xoxo .mid {
+    background-image: url("../assets/img/parallax/mid.png");
+    background-size: 917px 672px;
+    background-repeat: repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1800px;
+    width: 100%;
+    transform: translateZ(-0.5px) scale(1.5);
+    -webkit-transform: translateZ(-0.5px) scale(1.5);
+    z-index: 0; }
+  .xoxo .far {
+    background-image: url("../assets/img/parallax/far.png");
+    background-size: 456px 335px;
+    background-repeat: repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    height: 1350px;
+    transform: translateZ(-1px) scale(2);
+    -webkit-transform: translateZ(-1px) scale(2);
+    z-index: 0; }
 
 .header-wrapper {
   position: relative;
   display: table;
   width: 100%;
   height: 750px;
-  margin-bottom: 200px; }
+  margin-bottom: 200px;
+  z-index: 3; }
   .header-wrapper .header {
     height: 800px;
     vertical-align: middle;
@@ -239,7 +249,7 @@ footer {
   max-width: 720px;
   margin: 0 auto;
   font-family: "Univers", sans-serif;
-  z-index: 2;
+  z-index: 3;
   position: relative; }
   .cards .title {
     font-size: 0.95rem;
@@ -269,10 +279,7 @@ footer {
       margin-top: 0; }
       .cards > * .title {
         padding-left: 10px; }
-      .cards > * .index-card {
-        display: table-cell;
-        vertical-align: middle; }
-        .cards > * .index-card .logo {
-          width: auto;
-          max-width: 73%;
-          padding-bottom: 20px; } }
+      .cards > * .index-card .logo {
+        width: auto;
+        max-width: 73%;
+        padding-bottom: 20px; } }

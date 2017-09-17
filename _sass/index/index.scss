@@ -2,7 +2,7 @@
   max-width: 720px;
   margin: 0 auto;
   font-family: $alt-font-family;
-  z-index: 2;
+  z-index: 3;
   position: relative;
 
   .title {
@@ -45,8 +45,6 @@
       }
 
       .index-card {
-        display: table-cell;
-        vertical-align: middle;
         .logo {
           width: auto;
           max-width: 73%;
