@@ -111,6 +111,9 @@ footer {
   position: relative; }
   .ping .title {
     color: #FFFF38; }
+    @media screen and (max-width: 600px) {
+      .ping .title {
+        color: #7B4288; } }
   .ping .index-card {
     background-color: #FFFF38; }
     .ping .index-card > * {
@@ -137,6 +140,9 @@ footer {
   position: relative; }
   .teach .title {
     color: #66DAE7; }
+    @media screen and (max-width: 600px) {
+      .teach .title {
+        color: #fff; } }
   .teach .index-card {
     background-color: #66DAE7; }
     .teach .index-card > * {
@@ -152,8 +158,13 @@ footer {
   width: 374px; }
   .mind-maps .title {
     color: #F81CCF; }
+    @media screen and (max-width: 600px) {
+      .mind-maps .title {
+        color: #fff; } }
   .mind-maps .index-card {
     background-color: #F81CCF; }
+    .mind-maps .index-card > * {
+      display: inline-block; }
     .mind-maps .index-card .node {
       color: #fff;
       display: inline-block;
@@ -194,6 +205,9 @@ footer {
   position: relative; }
   .safety-culture .title {
     color: #F57523; }
+    @media screen and (max-width: 600px) {
+      .safety-culture .title {
+        color: #fff; } }
   .safety-culture .index-card {
     background-color: #F57523; }
     .safety-culture .index-card > * {
@@ -218,6 +232,9 @@ footer {
   position: relative; }
   .risk-culture .title {
     color: #136DFE; }
+    @media screen and (max-width: 600px) {
+      .risk-culture .title {
+        color: #fff; } }
   .risk-culture .index-card {
     background-color: #136DFE;
     padding-left: 30px;
@@ -247,6 +264,9 @@ footer {
   .cards .card-break {
     clear: both;
     margin: -20px 0; }
+    @media screen and (max-width: 600px) {
+      .cards .card-break {
+        display: none; } }
   .cards .index-card-wrapper {
     position: relative; }
     .cards .index-card-wrapper .index-card {
@@ -268,11 +288,11 @@ footer {
       float: none;
       margin-top: 0; }
       .cards > * .title {
-        padding-left: 10px; }
-      .cards > * .index-card {
-        display: table-cell;
-        vertical-align: middle; }
-        .cards > * .index-card .logo {
-          width: auto;
-          max-width: 73%;
-          padding-bottom: 20px; } }
+        padding: 10px;
+        position: absolute; }
+      .cards > * .index-card .logo {
+        width: auto;
+        max-width: 73%;
+        padding-bottom: 20px; }
+        .cards > * .index-card .logo img {
+          max-width: 100%; } }

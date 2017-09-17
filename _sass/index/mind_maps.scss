@@ -12,10 +12,16 @@ $node-4: #C721D3;
   width: 374px;
   .title {
     color: $card-color;
+    @include media-query($on-palm) {
+      color: $card-accent;
+    }
   }
 
   .index-card {
     background-color: $card-color;
+    > * {
+      display: inline-block;
+    }
     .node {
       color: #fff;
       display: inline-block;

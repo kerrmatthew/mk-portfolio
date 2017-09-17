@@ -13,6 +13,9 @@
   .card-break {
     clear: both;
     margin: -20px 0;
+    @include media-query($on-palm) {
+      display: none;
+    }
   }
 
   .index-card-wrapper {
@@ -41,16 +44,18 @@
       margin-top: 0;
 
       .title {
-        padding-left: 10px;
+        padding: 10px;
+        position: absolute;
       }
 
       .index-card {
-        display: table-cell;
-        vertical-align: middle;
         .logo {
           width: auto;
           max-width: 73%;
           padding-bottom: 20px;
+          img {
+            max-width: 100%;
+          }
         }
       }
     }
