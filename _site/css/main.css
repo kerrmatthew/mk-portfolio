@@ -16,6 +16,11 @@
   font-family: 'Gotham';
   src: url("../assets/fonts/gotham/gotham-ultra-webfont.woff") format("woff"), url("../assets/fonts/gotham/GothaUlt.ttf") format("truetype");
   font-weight: 900; }
+html,
+body {
+  position: fixed;
+  overflow: hidden; }
+
 html body {
   background: #fff;
   font-family: "Gotham", sans-serif;
@@ -58,8 +63,9 @@ footer {
   left: 0;
   perspective: 1px;
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto; }
+  width: 100vw;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
   .xoxo .mid {
     background-image: url("../assets/img/parallax/mid.png");
     background-size: 917px 672px;

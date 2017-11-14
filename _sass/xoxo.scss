@@ -7,8 +7,9 @@
   left: 0;
   perspective: 1px;
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
+  width: 100vw;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 
   .mid {
     background-image: url('../assets/img/parallax/mid.png');
