@@ -20,9 +20,12 @@ html body {
   background: #fff;
   font-family: "Gotham", sans-serif;
   font-size: 19px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  background-color: #fafafa; }
   html body > .wrapper {
-    position: relative; }
+    position: relative;
+    padding-right: 0;
+    padding-left: 0; }
   html body h1, html body h2, html body h3, html body h4, html body h5 {
     font-family: "Gotham", sans-serif; }
   html body .heavy {
@@ -35,7 +38,7 @@ footer {
   background-color: #DDDDDD;
   position: relative;
   z-index: 2;
-  margin-top: -50px; }
+  margin-top: 200px; }
   footer .footer {
     padding: 160px 0 360px;
     max-width: 600px;
@@ -47,9 +50,10 @@ footer {
         padding-left: 15px; } }
 
 .xoxo {
+  display: none;
+  background-color: #fff;
   width: 100%;
   min-height: 100%;
-  position: absolute;
   top: 0;
   left: 0;
   perspective: 1px;
@@ -143,7 +147,6 @@ footer {
 
 .teach {
   float: right;
-  margin-top: -310px;
   max-width: 76%;
   width: 365px;
   z-index: 2;
@@ -163,7 +166,7 @@ footer {
 
 .mind-maps {
   float: left;
-  margin-top: -40px;
+  margin: 50px 0;
   max-width: 52%;
   width: 374px; }
   .mind-maps .title {
@@ -209,7 +212,7 @@ footer {
 .safety-culture {
   float: left;
   max-width: 76%;
-  margin-top: -50px;
+  margin: 50px 0 100px;
   width: 494px;
   z-index: 1;
   position: relative; }
@@ -236,7 +239,6 @@ footer {
 .risk-culture {
   float: right;
   max-width: 76%;
-  margin-top: -40px;
   width: 544px;
   z-index: 2;
   position: relative; }
