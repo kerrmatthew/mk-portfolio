@@ -7,9 +7,13 @@ $node-4: #C721D3;
 
 .mind-maps {
   float: left;
-  margin: 50px 0;
   max-width: 52%;
   width: 374px;
+
+  @include media-query-min($on-palm) {
+    margin: 50px 0;
+  }
+
   .title {
     color: $card-color;
     @include media-query($on-palm) {

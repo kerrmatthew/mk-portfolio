@@ -37,17 +37,17 @@ html body {
 footer {
   background-color: #DDDDDD;
   position: relative;
-  z-index: 2;
-  margin-top: 200px; }
+  z-index: 2; }
+  @media screen and (min-width: 600px) {
+    footer {
+      margin-top: 200px; } }
   footer .footer {
     padding: 160px 0 360px;
     max-width: 600px;
     margin: 0 auto; }
     @media screen and (max-width: 600px) {
       footer .footer {
-        padding-bottom: 160px;
-        padding-right: 15px;
-        padding-left: 15px; } }
+        padding: 50px 15px; } }
 
 .xoxo {
   display: none;
@@ -91,7 +91,6 @@ footer {
   display: table;
   width: 100%;
   height: 750px;
-  margin-bottom: 200px;
   z-index: 3; }
   .header-wrapper .header {
     height: 800px;
@@ -166,9 +165,11 @@ footer {
 
 .mind-maps {
   float: left;
-  margin: 50px 0;
   max-width: 52%;
   width: 374px; }
+  @media screen and (min-width: 600px) {
+    .mind-maps {
+      margin: 50px 0; } }
   .mind-maps .title {
     color: #F81CCF; }
     @media screen and (max-width: 600px) {
@@ -212,10 +213,12 @@ footer {
 .safety-culture {
   float: left;
   max-width: 76%;
-  margin: 50px 0 100px;
   width: 494px;
   z-index: 1;
   position: relative; }
+  @media screen and (min-width: 600px) {
+    .safety-culture {
+      margin: 50px 0 100px; } }
   .safety-culture .title {
     color: #F57523; }
     @media screen and (max-width: 600px) {

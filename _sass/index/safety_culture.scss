@@ -3,10 +3,14 @@ $card-accent: #fff;
 .safety-culture {
   float: left;
   max-width: 76%;
-  margin: 50px 0 100px;
   width: 494px;
   z-index: 1;
   position: relative;
+
+  @include media-query-min($on-palm) {
+    margin: 50px 0 100px;
+  }
+
   .title {
     color: $card-color;
     @include media-query($on-palm) {
