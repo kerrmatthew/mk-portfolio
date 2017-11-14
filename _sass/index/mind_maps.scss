@@ -22,6 +22,7 @@ $node-4: #C721D3;
   }
 
   .index-card {
+    a { color: $card-accent; }
     background-color: $card-color;
     > * {
       display: inline-block;

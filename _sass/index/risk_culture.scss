@@ -14,6 +14,7 @@ $card-accent: #fff;
     }
   }
   .index-card {
+    a { color: $card-accent; }
     background-color: $card-color;
     padding-left: 30px;
     padding-right: 30px;

@@ -138,6 +138,8 @@ footer {
         color: #7B4288; } }
   .ping .index-card {
     background-color: #FFFF38; }
+    .ping .index-card a {
+      color: #7B4288; }
     .ping .index-card > * {
       display: inline-block; }
     .ping .index-card .inner-box {
@@ -166,6 +168,8 @@ footer {
         color: #fff; } }
   .teach .index-card {
     background-color: #66DAE7; }
+    .teach .index-card a {
+      color: #fff; }
     .teach .index-card > * {
       display: inline-block; }
     .teach .index-card .inner-box {
@@ -186,6 +190,8 @@ footer {
         color: #fff; } }
   .mind-maps .index-card {
     background-color: #F81CCF; }
+    .mind-maps .index-card a {
+      color: #fff; }
     .mind-maps .index-card > * {
       display: inline-block; }
     .mind-maps .index-card .node {
@@ -235,6 +241,8 @@ footer {
         color: #fff; } }
   .safety-culture .index-card {
     background-color: #F57523; }
+    .safety-culture .index-card a {
+      color: #fff; }
     .safety-culture .index-card > * {
       display: inline-block; }
     .safety-culture .index-card .inner-box {
@@ -263,6 +271,8 @@ footer {
     background-color: #136DFE;
     padding-left: 30px;
     padding-right: 30px; }
+    .risk-culture .index-card a {
+      color: #fff; }
     .risk-culture .index-card > * {
       display: inline-block; }
     .risk-culture .index-card .inner-box {
@@ -282,6 +292,13 @@ footer {
   font-family: "Univers", sans-serif;
   z-index: 3;
   position: relative; }
+  .cards .see-more {
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
   .cards .title {
     font-size: 0.95rem;
     text-transform: uppercase; }

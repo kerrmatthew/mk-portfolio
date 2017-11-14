@@ -13,6 +13,7 @@ $card-accent: #7B4288;
     }
   }
   .index-card {
+    a { color: $card-accent; }
     background-color: $card-color;
     > * {
       display: inline-block;
