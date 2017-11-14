@@ -1,7 +1,9 @@
-html,
-body {
-  position: fixed;
-  overflow: hidden;
+@include media-query($on-palm) {
+  html,
+  body {
+    position: fixed;
+    overflow: hidden;
+  }
 }
 
 html {
