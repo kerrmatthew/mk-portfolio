@@ -42,7 +42,8 @@ html body {
 footer {
   background-color: #DDDDDD;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  box-shadow: 0 -10px 128px 117px #ddd; }
   @media screen and (min-width: 600px) {
     footer {
       margin-top: 200px; } }
@@ -72,7 +73,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    height: 1800px;
+    height: 300%;
     width: 100%;
     transform: translateZ(-0.5px) scale(1.5);
     -webkit-transform: translateZ(-0.5px) scale(1.5);
@@ -84,9 +85,8 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 300%;
     width: 100%;
-    height: 1350px;
     transform: translateZ(-1px) scale(2);
     -webkit-transform: translateZ(-1px) scale(2);
     z-index: 0; }
@@ -122,10 +122,6 @@ footer {
         font-size: 1.02em; } }
 
 .ping {
-  float: right;
-  max-width: 76%;
-  width: 546px;
-  z-index: 2;
   position: relative; }
   .ping .title {
     color: #FFFF38; }
@@ -152,9 +148,6 @@ footer {
         width: 100%; }
 
 .teach {
-  float: right;
-  max-width: 76%;
-  width: 365px;
   z-index: 2;
   position: relative; }
   .teach .title {
@@ -172,59 +165,52 @@ footer {
       border-left-color: #fff;
       color: #fff; }
 
-.mind-maps {
-  float: left;
-  max-width: 52%;
-  width: 374px; }
-  @media screen and (min-width: 600px) {
-    .mind-maps {
-      margin: 50px 0; } }
-  .mind-maps .title {
-    color: #F81CCF; }
-    @media screen and (max-width: 600px) {
-      .mind-maps .title {
-        color: #fff; } }
-  .mind-maps .index-card {
-    background-color: #F81CCF; }
-    .mind-maps .index-card a {
-      color: #fff; }
-    .mind-maps .index-card > * {
-      display: inline-block; }
-    .mind-maps .index-card .node {
-      color: #fff;
-      display: inline-block;
-      padding: 10px 10px 10px 38px;
-      border-radius: 50px;
-      position: relative;
-      margin: 5px;
-      min-width: 105px;
-      font-size: 1.1rem; }
-      .mind-maps .index-card .node:before {
-        content: "";
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        background-image: url("../assets/img/cube.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        padding: 12px; }
-      .mind-maps .index-card .node.node-one {
-        background-color: #D4E300; }
-      .mind-maps .index-card .node.node-two {
-        background-color: #F8931C; }
-      .mind-maps .index-card .node.node-three {
-        background-color: #C17E0E; }
-      .mind-maps .index-card .node.node-four {
-        background-color: #C721D3; }
-    .mind-maps .index-card .inner-box {
-      margin-top: 50px;
-      border-left-color: #fff;
-      color: #fff; }
+@media screen and (min-width: 600px) {
+  .mind-maps {
+    margin: 50px 0; } }
+.mind-maps .title {
+  color: #F81CCF; }
+  @media screen and (max-width: 600px) {
+    .mind-maps .title {
+      color: #fff; } }
+.mind-maps .index-card {
+  background-color: #F81CCF; }
+  .mind-maps .index-card a {
+    color: #fff; }
+  .mind-maps .index-card > * {
+    display: inline-block; }
+  .mind-maps .index-card .node {
+    color: #fff;
+    display: inline-block;
+    padding: 10px 10px 10px 38px;
+    border-radius: 50px;
+    position: relative;
+    margin: 5px;
+    min-width: 105px;
+    font-size: 1.1rem; }
+    .mind-maps .index-card .node:before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-image: url("../assets/img/cube.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding: 12px; }
+    .mind-maps .index-card .node.node-one {
+      background-color: #D4E300; }
+    .mind-maps .index-card .node.node-two {
+      background-color: #F8931C; }
+    .mind-maps .index-card .node.node-three {
+      background-color: #C17E0E; }
+    .mind-maps .index-card .node.node-four {
+      background-color: #C721D3; }
+  .mind-maps .index-card .inner-box {
+    margin-top: 50px;
+    border-left-color: #fff;
+    color: #fff; }
 
 .safety-culture {
-  float: left;
-  max-width: 76%;
-  width: 494px;
   z-index: 1;
   position: relative; }
   @media screen and (min-width: 600px) {
@@ -253,9 +239,6 @@ footer {
         margin-top: -15px; }
 
 .risk-culture {
-  float: right;
-  max-width: 76%;
-  width: 544px;
   z-index: 2;
   position: relative; }
   .risk-culture .title {

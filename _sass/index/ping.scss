@@ -1,10 +1,6 @@
 $card-color: #FFFF38;
 $card-accent: #7B4288;
 .ping {
-  float: right;
-  max-width: 76%;
-  width: 546px;
-  z-index: 2;
   position: relative;
   .title {
     color: $card-color;

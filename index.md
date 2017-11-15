@@ -5,6 +5,8 @@ permalink: /
 <div class="xoxo">
   {% include index/header.html %}
   <div class="cards">
+    {% include index/about.html %}
+    <br class="card-break" />
     {% include index/ping.html %}
     <br class="card-break" />
     {% include index/mind_maps.html %}

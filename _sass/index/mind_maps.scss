@@ -6,10 +6,6 @@ $node-3: #C17E0E;
 $node-4: #C721D3;
 
 .mind-maps {
-  float: left;
-  max-width: 52%;
-  width: 374px;
-
   @include media-query-min($on-palm) {
     margin: 50px 0;
   }
