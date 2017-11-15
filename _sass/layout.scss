@@ -1,4 +1,4 @@
-@include media-query($on-palm) {
+@include media-query-min($on-palm) {
   html,
   body {
     position: fixed;
