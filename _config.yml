@@ -14,3 +14,4 @@ defaults:
     values:
       image: true
       parallax: 'far'
+exclude: ['originals/*']

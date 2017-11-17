@@ -1,10 +1,6 @@
 $card-color: #66DAE7;
 $card-accent: #fff;
 .teach {
-  float: right;
-  margin-top: -310px;
-  max-width: 76%;
-  width: 365px;
   z-index: 2;
   position: relative;
   .title {
@@ -14,6 +10,7 @@ $card-accent: #fff;
     }
   }
   .index-card {
+    a { color: $card-accent; }
     background-color: $card-color;
     > * {
       display: inline-block;

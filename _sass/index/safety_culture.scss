@@ -1,12 +1,13 @@
 $card-color: #F57523;
 $card-accent: #fff;
 .safety-culture {
-  float: left;
-  max-width: 76%;
-  margin-top: -50px;
-  width: 494px;
   z-index: 1;
   position: relative;
+
+  @include media-query-min($on-palm) {
+    margin: 50px 0 100px;
+  }
+
   .title {
     color: $card-color;
     @include media-query($on-palm) {
@@ -14,6 +15,7 @@ $card-accent: #fff;
     }
   }
   .index-card {
+    a { color: $card-accent; }
     background-color: $card-color;
     > * {
       display: inline-block;

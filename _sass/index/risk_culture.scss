@@ -2,10 +2,6 @@ $card-color: #136DFE;
 $card-accent: #fff;
 
 .risk-culture {
-  float: right;
-  max-width: 76%;
-  margin-top: -40px;
-  width: 544px;
   z-index: 2;
   position: relative;
   .title {
@@ -15,6 +11,7 @@ $card-accent: #fff;
     }
   }
   .index-card {
+    a { color: $card-accent; }
     background-color: $card-color;
     padding-left: 30px;
     padding-right: 30px;

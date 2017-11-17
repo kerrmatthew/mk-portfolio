@@ -1,12 +1,23 @@
+@include media-query-min($on-palm) {
+  html,
+  body {
+    position: fixed;
+    overflow: hidden;
+  }
+}
+
 html {
   body {
     background: #fff;
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
+    background-color: #fafafa;
 
     > .wrapper {
       position: relative;
+      padding-right: 0;
+      padding-left: 0;
     }
 
     h1, h2, h3, h4, h5 {

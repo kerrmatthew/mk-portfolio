@@ -6,10 +6,10 @@ $node-3: #C17E0E;
 $node-4: #C721D3;
 
 .mind-maps {
-  float: left;
-  margin-top: -40px;
-  max-width: 52%;
-  width: 374px;
+  @include media-query-min($on-palm) {
+    margin: 50px 0;
+  }
+
   .title {
     color: $card-color;
     @include media-query($on-palm) {
@@ -18,6 +18,7 @@ $node-4: #C721D3;
   }
 
   .index-card {
+    a { color: $card-accent; }
     background-color: $card-color;
     > * {
       display: inline-block;
