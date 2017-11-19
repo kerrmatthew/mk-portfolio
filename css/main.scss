@@ -16,6 +16,11 @@
 }
 
 @font-face {
+  font-family: 'UniversLTStd-BoldCn';
+  src: url("../assets/fonts/univers/UniversLTStd-BoldCn.otf") format("opentype");
+}
+
+@font-face {
   font-family: 'Gotham';
   src: url("../assets/fonts/gotham/gotham-book-webfont.woff") format("woff"),
        url("../assets/fonts/gotham/GOTHMBOK.ttf") format("truetype");
@@ -39,6 +44,7 @@
 // Our variables
 $alt-font-family: 'Univers', sans-serif;
 $alt-font-family-cnd: 'UniversCnd', sans-serif;
+$alt-font-family-bold-cnd: 'UniversLTStd-BoldCn', 'UniversCnd', sans-serif;
 $heading-font-family: 'Gotham', sans-serif;
 $base-font-family: $heading-font-family;
 
@@ -83,6 +89,8 @@ $on-laptop:        800px;
 @import
   "layout",
   "footer",
+  "pages",
+  "ping",
   "xoxo",
   "index/header",
   "index/ping",

@@ -1,0 +1,28 @@
+$card-color: #FFFF38;
+$card-color-shadow-color: rgba(255,255,56,0.30);
+$card-accent: #7B4288;
+
+.ping {
+  background-color: $card-color;
+  color: #7B4288;
+  padding: 100px 0px;
+
+  h1 {
+    padding: 50px 0;
+  }
+
+  .img {
+    &.responsive {
+      max-width: 450px;
+      width: 100%;
+      padding: 250px 20px;
+    }
+  }
+
+  .sketch {
+    height: 100px;
+    width: 100%;
+    max-width: 150px;
+    background-color: #fff;
+  }
+}

@@ -5,6 +5,9 @@
   font-family: 'UniversCnd';
   src: url("../assets/fonts/univers/univers-ultracondensed-webfont.woff") format("woff"), url("../assets/fonts/univers/UniversLTStd-UltraCn.otf") format("opentype"); }
 @font-face {
+  font-family: 'UniversLTStd-BoldCn';
+  src: url("../assets/fonts/univers/UniversLTStd-BoldCn.otf") format("opentype"); }
+@font-face {
   font-family: 'Gotham';
   src: url("../assets/fonts/gotham/gotham-book-webfont.woff") format("woff"), url("../assets/fonts/gotham/GOTHMBOK.ttf") format("truetype");
   font-weight: normal; }
@@ -55,6 +58,40 @@ footer {
     @media screen and (max-width: 600px) {
       footer .footer {
         padding: 50px 15px; } }
+
+.page {
+  color: #ABABAB; }
+  .page h1, .page h2, .page h3, .page h4, .page h5 {
+    text-transform: uppercase;
+    font-family: "UniversCnd", sans-serif; }
+  .page h1 {
+    font-size: 46px;
+    font-weight: 200;
+    font-family: "Univers", sans-serif; }
+  .page h4 {
+    font-size: 15px; }
+  .page h3 {
+    font-family: "UniversLTStd-BoldCn", "UniversCnd", sans-serif;
+    font-size: 19px; }
+  .page a {
+    font-weight: bold;
+    text-decoration: underline; }
+
+.ping {
+  background-color: #FFFF38;
+  color: #7B4288;
+  padding: 100px 0px; }
+  .ping h1 {
+    padding: 50px 0; }
+  .ping .img.responsive {
+    max-width: 450px;
+    width: 100%;
+    padding: 250px 20px; }
+  .ping .sketch {
+    height: 100px;
+    width: 100%;
+    max-width: 150px;
+    background-color: #fff; }
 
 .xoxo {
   display: none;
