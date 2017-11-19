@@ -26,7 +26,8 @@ html body {
   font-family: "Gotham", sans-serif;
   font-size: 19px;
   line-height: 1.5;
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  text-rendering: optimizeLegibility; }
   html body > .wrapper {
     position: relative;
     padding-right: 0;
@@ -129,6 +130,7 @@ footer {
       .ping .title {
         color: #7B4288; } }
   .ping .index-card {
+    box-shadow: 0 9px 12px rgba(255, 255, 56, 0.3);
     background-color: #FFFF38; }
     .ping .index-card a {
       color: #7B4288; }

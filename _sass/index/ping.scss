@@ -1,4 +1,5 @@
 $card-color: #FFFF38;
+$card-color-shadow-color: rgba(255,255,56,0.30);
 $card-accent: #7B4288;
 .ping {
   position: relative;
@@ -9,6 +10,7 @@ $card-accent: #7B4288;
     }
   }
   .index-card {
+    box-shadow: 0 9px 12px $card-color-shadow-color;
     a { color: $card-accent; }
     background-color: $card-color;
     > * {
