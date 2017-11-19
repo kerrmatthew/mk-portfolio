@@ -1,7 +1,22 @@
 <footer>
   <div class="footer">
-    <h4 class="heavy white"></h4>
-    <p>
-    </p>
+    <h4 class="heavy white">More</h4>
+    
+
+
+    {% for thumbnail in site.thumbnails %}
+
+    <div style="width: {{ thumbnail.colspan | times:33 }}%; 
+    float: left; 
+    height: 150px;
+    background-image: url({{ thumbnail.image_path | absolute_url }}); 
+    background-size: contain;
+    ">
+    </div>
+      <caption>{{ thumbnail.title }}</caption>
+
+
+    {% endfor %}
+
   </div>
 </footer>

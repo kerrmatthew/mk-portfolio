@@ -15,3 +15,6 @@ defaults:
       image: true
       parallax: 'far'
 exclude: ['originals/*']
+collections:
+  thumbnails:
+    output: true

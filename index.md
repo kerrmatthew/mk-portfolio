@@ -9,8 +9,6 @@ permalink: /
     <br class="card-break" />
     {% include index/ping.html %}
     <br class="card-break" />
-    {% include index/mind_maps.html %}
-    <br class="card-break" />
     {% include index/teach.html %}
     <br class="card-break" />
     {% include index/safety_culture.html %}
