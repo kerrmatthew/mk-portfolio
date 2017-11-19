@@ -16,6 +16,10 @@ permalink: /
     {% include index/risk_culture.html %}
     <br class="card-break" />
   </div>
+
+    {% include footer.html %}
+
+
   <div class="mid"></div>
   <div class="far"></div>
 </div>
