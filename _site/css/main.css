@@ -19,11 +19,6 @@
   font-family: 'Gotham';
   src: url("../assets/fonts/gotham/gotham-ultra-webfont.woff") format("woff"), url("../assets/fonts/gotham/GothaUlt.ttf") format("truetype");
   font-weight: 900; }
-@media screen and (min-width: 600px) {
-  html,
-  body {
-    position: fixed;
-    overflow: hidden; } }
 html body {
   background: #fff;
   font-family: "Gotham", sans-serif;
@@ -34,7 +29,8 @@ html body {
   html body > .wrapper {
     position: relative;
     padding-right: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    overflow-x: hidden; }
   html body h1, html body h2, html body h3, html body h4, html body h5 {
     font-family: "Gotham", sans-serif; }
   html body .heavy {
@@ -42,6 +38,11 @@ html body {
     letter-spacing: 0.05rem; }
   html body .white {
     color: #fff; }
+  html body .white-bg {
+    background-color: #fff; }
+  html body .limit-max-width {
+    max-width: 1600px;
+    margin: 0 auto; }
 
 footer {
   background-color: #F2F1F1;
@@ -76,17 +77,35 @@ footer {
   .page a {
     font-weight: bold;
     text-decoration: underline; }
+  .page .img {
+    max-width: 100%; }
 
 .ping {
-  background-color: #FFFF38;
-  color: #7B4288;
-  padding: 100px 0px; }
+  color: #7B4288; }
+  .ping .fold {
+    padding: 100px 0px;
+    background-color: #FFFF38; }
   .ping h1 {
     padding: 50px 0; }
-  .ping .img.responsive {
-    max-width: 450px;
-    width: 100%;
-    padding: 250px 20px; }
+  .ping h4 {
+    padding: 0 25px; }
+  .ping p.consistent {
+    padding: 100px 50px; }
+    @media screen and (min-width: 600px) {
+      .ping p.consistent {
+        padding: 200px 25px; } }
+  .ping img {
+    width: 100%; }
+  .ping .img {
+    margin: 25px; }
+    .ping .img.responsive {
+      max-width: 450px;
+      margin: 50px 20px; }
+      @media screen and (min-width: 600px) {
+        .ping .img.responsive {
+          padding: 250px 20px; } }
+    .ping .img.consistent, .ping .img.logo-evolution, .ping .img.money-icon, .ping .img.safe {
+      max-width: 520px; }
   .ping .sketch {
     height: 100px;
     width: 100%;
